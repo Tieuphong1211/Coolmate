@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <title>Coolmate</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/src/output.css">
-    <link rel="stylesheet" href="/src/input.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdnjs.cloudflare.com/ajax/l ibs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -35,27 +32,34 @@
         .borderProduct {
             border: 1px solid #4e4e4e;
         }
+        .active-button{
+            border: 1px solid blue;
+        }
     </style>
     <script src="./index.js"></script>
 </head>
 <body>
+
     <!-- Nav -->
     <div class="flex w-full lg:px-[15px] xl:px-[30px] 2xl:px-[50px] min-[990px]:justify-between justify-center">
-        <div class="w-fit min-[990px]:basis-1/2 flex px-3">
+       <!-- <div class="w-fit min-[990px]:basis-1/2 flex px-3">
             <div class="px-2 py-1 flex items-center"><a href="#"><img class="w-[98px] h-[18px]" src="./img/LOGO/logo-coolmate.jpg" alt=""></a></div>
             <h1 class="px-2 py-1 flex items-center text-base font-medium tracking-tighter hover:bg-[#dfdfdf]"><a href="#">CM24</a></h1>
             <h1 class="px-2 py-1 flex items-center text-base font-medium tracking-tighter hover:bg-[#dfdfdf]"><a href="#">84RISING<sup>*</sup></a></h1>
             <h1 class="px-2 py-1 flex items-center text-xs font-bold tracking-tighter hover:bg-[#dfdfdf]"><a href="#">COOLXPRINT</a></h1>
-        </div>
-        <div class="w-fit basis-1/2 flex justify-end max-[990px]:hidden mr-4">
-            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Tham gia CoolClub <i class="fa-solid fa-star text-lg pl-1"></i></a></div>
-            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Blog</a></div>
-            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Về Coolmate</a></div>
-            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Trung tâm CSKH</a></div>
-            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Đăng nhập</a></div>
+        </div>-->
+<!-- TODO: Viet code ngan gon lai -->
+        <div class="flex justify-start items-center gap-2 py-1 bg-red-200 font-medium tracking-tighter">
+            <a href="#" class="bg-yellow-200"><img class="w-[98px] h-[18px]" src="/img/LOGO/logo-coolmate.jpg" alt=""></a>
+            <a href="#" class="bg-yellow-200">CM24</a>
+            <a href="#">84RISING<sup>*</sup></a>
+            <a href="#">COOLXPRINT</a>
         </div>
     </div>
-    <div class="w-full py-[6px] text-sm font-medium text-center text-white bg-[#525252]"><a href="#">Super Sale - Giảm đến 50% <u>Mua ngay</u> <i class="fa-solid fa-arrow-right"></i></a></div>
+
+    <div class="w-full py-[6px] text-sm font-medium text-center text-white bg-[#525252]">
+        <a href="#">Super Sale - Giảm đến 50% <u>Mua ngay</u> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
 
 
     <!-- Nav menu -->
@@ -164,16 +168,16 @@
                             <div class="basis-2/5 p-5 w-fit grid grid-cols-2 gap-5">
                                 <div class="flex flex-col h-full gap-5">
                                     <div class="tp-styleImg relative overflow-hidden h-[50%]">
-                                        <img class="hover:ease-in-out hover:duration-500 transition-all h-full hover:scale-125 z-10" src="/img/NAV img/sanpham_1.png" alt="">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all h-full hover:scale-125 z-10" src="/img/NAV_img/sanpham_1.png" alt="">
                                         <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Quần dài chạy bộ Fast & Free</h1>
                                     </div> 
                                     <div class="tp-styleImg relative overflow-hidden h-[50%]">
-                                        <img class="hover:ease-in-out hover:duration-500 transition-all h-full hover:scale-125" src="/img/NAV img/sanpham_2.png" alt="">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all h-full hover:scale-125" src="/img/NAV_img/sanpham_2.png" alt="">
                                         <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Quần dài Kaki Excool</h1>
                                     </div>
                                 </div>
                                 <div class="tp-styleImg h-full relative overflow-hidden ">
-                                    <img class="hover:ease-in-out hover:duration-500 transition-all h-full hover:scale-125 " src="/img/NAV img/sanpham_3.png" alt="">
+                                    <img class="hover:ease-in-out hover:duration-500 transition-all h-full hover:scale-125 " src="/img/NAV_img/sanpham_3.png" alt="">
                                     <p class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50"></p>
                                 </div>
                             </div>
@@ -215,16 +219,16 @@
                             <div class="w-[33%] grid grid-cols-2 gap-5 px-5 py-8 border-r-[1px] border-[#aeafaf]">
                                 <div class="flex flex-col gap-5">
                                     <div class="tp-styleImg relative overflow-hidden h-[50%]">
-                                        <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 h-full" src="/img/NAV img/dolot1.jpg" alt="">
+                                        <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 h-full" src="/img/NAV_img/dolot1.jpg" alt="">
                                         <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Trunk CoolPouch</h1>
                                     </div>
                                     <div class="tp-styleImg relative overflow-hidden h-[50%]"> 
-                                        <img class="hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 h-full" src="/img/NAV img/dolot2.png" alt="">
+                                        <img class="hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 h-full" src="/img/NAV_img/dolot2.png" alt="">
                                         <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Trunk CoolFly</h1>
                                     </div>
                                 </div>
                                 <div class="tp-styleImg relative overflow-hidden">
-                                    <img class="hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 h-full" src="/img/NAV img/dolot3.png" alt="">
+                                    <img class="hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 h-full" src="/img/NAV_img/dolot3.png" alt="">
                                     <p class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Quần Long tights</p>
                                 </div>
                             </div>
@@ -291,16 +295,16 @@
                             <div class="w-[33%] grid grid-cols-2 gap-5 px-5 py-8 border-r-[1px] border-[#aeafaf]">
                                 <div class="flex flex-col gap-5">
                                     <div class="tp-styleImg relative h-full overflow-hidden">
-                                        <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 text-transparent" src="/img/NAV img/dtt1.jpg" alt="">
+                                        <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 text-transparent" src="/img/NAV_img/dtt1.jpg" alt="">
                                         <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">T-Shirt chạy bộ <br> Graphic Special</h1>
                                     </div>
                                     <div class="tp-styleImg relative h-full overflow-hidden">
-                                        <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125" src="/img/NAV img/dtt2.png" alt="">
+                                        <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125" src="/img/NAV_img/dtt2.png" alt="">
                                         <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Áo khoác chạy bộ <br> Fast & Free</h1>
                                     </div>
                                 </div>
                                 <div class="tp-styleImg relative h-full overflow-hidden">
-                                    <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125" src="/img/NAV img/dtt3.jpg" alt="">
+                                    <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125" src="/img/NAV_img/dtt3.jpg" alt="">
                                     <p class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Quần dài chạy bộ <br> Fast & Free</p>
                                 </div>
                             </div>
@@ -370,16 +374,16 @@
                             <div class="w-[33%] grid grid-cols-2 gap-5 px-5 py-8 border-r-[1px] border-[#aeafaf]">
                                 <div class="flex flex-col gap-5"> 
                                     <div class="tp-styleImg relative overflow-hidden h-[50%]">
-                                        <img class="hover:ease-in-out hover:duration-500 transition-all hover:scale-[1.25] h-full" src="/img/NAV img/mhn1.jpg" alt="">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all hover:scale-[1.25] h-full" src="/img/NAV_img/mhn1.jpg" alt="">
                                         <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Jeans Copper Denim</h1>
                                     </div>  
                                     <div class="tp-styleImg relative overflow-hidden h-[50%]">
-                                        <img class="hover:ease-in-out hover:duration-500 transition-all hover:scale-[1.5] h-full scale-125" src="/img/NAV img/mhn2.png" alt="">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all hover:scale-[1.5] h-full scale-125" src="/img/NAV_img/mhn2.png" alt="">
                                         <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Polo Pique Cotton</h1>
                                     </div>
                                 </div>
                                 <div class="tp-styleImg relative h-full overflow-hidden">
-                                    <img class="hover:ease-in-out hover:duration-500 transition-all hover:scale-[1.75] scale-125 translate-y-5 h-full" src="/img/NAV img/mhn3.png" alt="">
+                                    <img class="hover:ease-in-out hover:duration-500 transition-all hover:scale-[1.75] scale-125 translate-y-5 h-full" src="/img/NAV_img/mhn3.png" alt="">
                                     <p class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">UT Pants</p>
                                 </div>
                             </div>
@@ -451,21 +455,21 @@
                                 <div class="px-12 grid grid-cols-2 my-5 gap-5 2xl:py-12 2xl:px-24">
                                     <div class="w-fit">
                                         <div class="tp-styleImg relative w-fit h-fit my-5 overflow-hidden">
-                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV img/sxr1.jpg" alt="">
+                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV_img/sxr1.jpg" alt="">
                                             <p class="absolute bottom-4 xl:text-xl left-4 text-sm font-bold text-white z-50">Các loại quần</p>
                                         </div>
                                         <div class="tp-styleImg relative w-fit h-fit my-5 overflow-hidden">
-                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV img/sxr2.jpg" alt="">
+                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV_img/sxr2.jpg" alt="">
                                             <p class="absolute bottom-4 xl:text-xl left-4 text-sm font-bold text-white z-50">Các loại áo</p>
                                         </div>
                                     </div>
                                     <div class="w-fit">
                                         <div class="tp-styleImg relative w-fit h-fit my-5 overflow-hidden">
-                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV img/sxr3.jpg" alt="">
+                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV_img/sxr3.jpg" alt="">
                                             <p class="absolute bottom-4 xl:text-xl left-4 text-sm font-bold text-white z-50">Sản phẩm khác</p>
                                         </div>
                                         <div class="tp-styleImg relative w-fit h-fit my-5 overflow-hidden">
-                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV img/sxr4.jpg" alt="">
+                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV_img/sxr4.jpg" alt="">
                                             <p class="absolute bottom-4 xl:text-xl left-4 text-sm font-bold text-white z-50">Phụ kiện</p>
                                         </div>    
                                     </div>
@@ -529,16 +533,16 @@
     </div>
 
     <!-- Advance Img -->
-     <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+     <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide" >
         <!-- Carousel wrapper -->
         <div class="relative h-[500px] 2xl:h-[780px] overflow-hidden z-0">
              <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <a href="#"><img src="/img/Slide Menu/slide1.jpg" class="absolute block max-w-full h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></a>
+                <a href="#"><img src="/img/Slide_Menu/slide1.jpg" class="absolute block max-w-full h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></a>
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <a href="#"><img src="/img/Slide Menu/slide2.jpg" class="absolute block max-w-full h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></a>
+                <a href="#"><img src="/img/Slide_Menu/slide2.jpg" class="absolute block max-w-full h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></a>
             </div>
         </div>
         <div class="flex justify-center items-center pt-4 z-10">
@@ -558,6 +562,7 @@
             </button>
         </div>
     </div>
+
 
     <!-- Sản Phẩm Mới -->
     <div class="flex mx-4 mt-12 mb-4 gap-7">
@@ -584,15 +589,30 @@
             <a href="#" class="text-xl font-semibold"><u>Xem Thêm</u></a>
         </div> 
         <div class="grid grid-cols-4 gap-4">
+            <!-- san pham 1  id = 1 -->
+
             <div>
                 <div class="pd_parent relative overflow-hidden">
                     <a href="#">
-                        <div>
-                            <img class="pd_parent relative rounded-lg" src="/img/Product/DoThuDong/Card4.2.jpg" alt="">
+                        <div class="img-product-1" id="img-product-1-color-1x1">
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/DoThuDong/Card4.2.jpg" alt="" >
                             <div>
-                                <a href="#"><img class="pd_child absolute top-0 rounded-lg rounded-b-lg'" src="/img/Product/DoThuDong/Card4.1.jpg" alt=""></a>
+                                <a href=""><img class="pd_child absolute top-0 rounded-lg rounded-b-lg'" src="/img/Product/DoThuDong/Card4.1.jpg" alt=""></a>
                             </div>
                         </div>
+                        <div class="img-product-1 hidden" id="img-product-1-color-2e2">
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/DoThuDong/Card3.2.jpg" alt=""  >
+                            <div>
+                                <a href=""><img class="pd_child absolute top-0 rounded-lg rounded-b-lg'" src="/img/Product/DoThuDong/Card3.1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="img-product-1 hidden" id="img-product-1-color-3er">
+                            <img class="pd_parent relative rounded-lg " src="/img/Product/DoThuDong/Card2.2.jpg" alt=""  >
+                            <div>
+                                <a href=""><img class="pd_child absolute top-0 rounded-lg rounded-b-lg'" src="/img/Product/DoThuDong/Card2.1.jpg" alt=""></a>
+                            </div>
+                        </div>
+
                         <div class="absolute bottom-7 w-[86%] z-50">
                             <div class="pd_child ml-[7%] w-full h-fit rounded-lg bg-opacity-90 bg-[#d7d7d6]">
                                 <p class="py-3 font-bold text-sm text-center">Thêm nhanh vào giỏ hàng +</p>
@@ -613,16 +633,45 @@
                     <span class="absolute top-3 right-3 px-2 py-1 font-extrabold text-xs rounded-md bg-[#ff3102] text-white">Sale</span>
                     <a href="#"><img class="absolute bottom-[2%] left-[2%] w-[40%] z-10" src="/img/Product/AoThunNam/discount1.png" alt=""></a>
                 </div>
-                <a href="#">
-                    <div class="flex gap-1 mb-1 mt-3">
+                <div class="mt-4 flex justify-start items-center gap-2">
+                    <button class="py-1 px-4 rounded-full bg-red-200 color-button-product-1 active-button" id="color-button-product-1-color-1x1" onclick="changeProductColor(1, '1x1')" > xxx</button>
+                    <button class="py-1 px-4 rounded-full bg-red-200 color-button-product-1" id="color-button-product-1-color-2e2" onclick="changeProductColor(1, '2e2')" > yyy</button>
+                    <button class="py-1 px-4 rounded-full bg-red-200 color-button-product-1 " id="color-button-product-1-color-3er" onclick="changeProductColor(1, '3er')" > ZZZ</button>
+                </div>
+                    <!--<div class="flex gap-1 mb-1 mt-3">
                         <img class="w-10 h-[25px] p-[2px] rounded-xl borderProduct Addborder" src="/img/Product/AoThunNam/color1.1.avif" alt="">
                         <img class="w-10 h-[25px] p-[2px] rounded-xl Addborder" src="/img/Product/AoThunNam/color1.1.avif" alt="">
-                    </div>
-                </a>
+                    </div>-->
                 <a href="#"><h1 class="text-sm font-semibold text-[#231f20]">Áo Singlet Nam Chạy Bộ in Graphic Special</h1></a>
                 <p class="text-sm font-medium text-[#9b9b9b]">Mỏng nhẹ / Đen</p>
                 <p class="font-bold text-sm mt-1">189.000đ</p>
             </div>
+
+            <script>
+                function changeProductColor(product_id, color_id){
+                    // TODO: Remove active-button class from all button color of product `product_id`
+                    const product_color_btns = document.getElementsByClassName(`color-button-product-${product_id}`);
+                    // ="color-button-product-" + product_id
+                    for (let i=0; i< product_color_btns.length; i++){
+                        product_color_btns[i].classList.remove("active-button");
+                    }
+                    // TODO: add active-button class to color button with color_id
+                    const product_color_btn = document.getElementById(`color-button-product-${product_id}-color-${color_id}`)
+                    product_color_btn.classList.add("active-button")
+
+                    // TODO:
+                    const product_imgs = document.getElementsByClassName(`img-product-${product_id}`)
+                    for(let i=0; i< product_imgs.length; i++){
+                        if  ( ! product_imgs[i].classList.contains("hidden"))
+                            product_imgs[i].classList.add("hidden")
+                    }
+                    const product_img =document.getElementById(`img-product-${product_id}-color-${color_id}`)
+                    product_img.classList.remove("hidden")
+                }
+
+
+            </script>
+            <!-- san pham 2-->
             <div>
                 <div class="pd_parent relative overflow-hidden">
                     <a class="z-50" href="#">
@@ -652,11 +701,11 @@
                     <span class="absolute top-3 right-3 px-2 py-1 font-extrabold text-xs rounded-md bg-[#ff3102] text-white">Sale</span>
                     <a href="#"><img class="absolute bottom-[2%] left-[2%] w-[40%] z-10" src="/img/Product/AoThunNam/discount1.png" alt=""></a>
                 </div>
-                <a href="#">
-                    <div class="flex gap-1 mb-1 mt-3">
-                        <div><img class="w-10 h-[25px] p-[2px]" src="/img/Product/AoThunNam/color.avif" alt=""></div>
-                    </div>
-                </a>
+                <div class="mt-4 flex justify-start items-center gap-2">
+                    <button class="py-1 px-4 rounded-full bg-red-200 color-button-product-2" id="color-button-product-2-color-1x1" onclick="changeProductColor(2, '1x1')" > xxx</button>
+                    <button class="py-1 px-4 rounded-full bg-red-200 color-button-product-2" id="color-button-product-2-color-2e2" onclick="changeProductColor(2, '2e2')" > yyy</button>
+                    <button class="py-1 px-4 rounded-full bg-red-200 color-button-product-2 active-button" id="color-button-product-2-color-3er" onclick="changeProductColor(2, '3er')" > ZZZ</button>
+                </div>
                 <a href="#"><h1 class="text-sm font-semibold text-[#231f20]"></h1></a>
                 <p class="text-sm font-medium text-[#9b9b9b]"></p>
                 <p class="font-bold text-sm mt-1">đ</p>
@@ -963,31 +1012,31 @@
     <div class="flex px-4 2xl:px-16 gap-4 py-14">
         <div class="w-[25%] h-fit">
             <div class="pd_parent h-fit relative">
-                <img src="/img/Title img/title1.avif" alt="">
+                <img src="/img/Title_img/title1.avif" alt="">
                 <div class="pd_child absolute top-0 left-0 w-full h-full bg-gray-800 opacity-30 z-50"></div>
             </div>
         </div>
         <div class="w-[25%] h-fit">
             <div class="pd_parent h-fit relative">
-                <img src="/img/Title img/title2.avif" alt="">
+                <img src="/img/Title_img/title2.avif" alt="">
                 <div class="pd_child absolute top-0 left-0 w-full h-full bg-gray-800 opacity-30 z-50"></div>
             </div>
         </div>
         <div class="w-[25%] h-fit">
             <div class="pd_parent h-fit relative">
-                <img src="/img/Title img/title3.avif" alt="">
+                <img src="/img/Title_img/title3.avif" alt="">
                 <div class="pd_child absolute top-0 left-0 w-full h-full bg-gray-800 opacity-30 z-50"></div>
             </div>
         </div>
         <div class="w-[25%] h-fit">
             <div class="pd_parent h-fit relative">
-                <img src="/img/Title img/title4.avif" alt="">
+                <img src="/img/Title_img/title4.avif" alt="">
                 <div class="pd_child absolute top-0 left-0 w-full h-full bg-gray-800 opacity-30 z-50"></div>
             </div>
         </div>
     </div>
 
-    <div class="px-4 2xl:px-16 pb-14"><a href="#"><img src="/img/Title img/title5.avif" alt=""></a></div>
+    <div class="px-4 2xl:px-16 pb-14"><a href="#"><img src="/img/Title_img/title5.avif" alt=""></a></div>
 
 
     <!--Diary Coolmate -->
@@ -1067,5 +1116,7 @@
     <div class="h-[900px] bg-white"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+
 </body>
 </html> 
