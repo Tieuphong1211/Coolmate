@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/l ibs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        .pd_child{
+            display: none;
+        }
+        .pd_parent:hover .pd_child{
+            display: block; 
+        }
+        .nav_HvParent:hover .nav_HvText{
+            color: #2456c2;
+        }   
+        .nav_HvParent:hover .nav_HvImg{
+            border-radius: 100%;
+            border-color: #2456c2;
+        }
+        .nav_HvParent:hover img{
+            scale: 0.9;
+            transition-duration: 200ms;     
+        }
+        .borderProduct {
+            border: 1px solid #4e4e4e;
+        }
+    </style>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <!-- Nav -->
+    <div class="flex w-full lg:px-[15px] xl:px-[30px] 2xl:px-[50px] min-[990px]:justify-between justify-center">
+        <div class="w-fit min-[990px]:basis-1/2 flex px-3">
+            <div class="px-2 py-1 flex items-center"><a href="#"><img class="w-[98px] h-[18px]" src="./img/LOGO/logo-coolmate.jpg" alt=""></a></div>
+            <h1 class="px-2 py-1 flex items-center text-base font-medium tracking-tighter hover:bg-[#dfdfdf]"><a href="#">CM24</a></h1>
+            <h1 class="px-2 py-1 flex items-center text-base font-medium tracking-tighter hover:bg-[#dfdfdf]"><a href="#">84RISING<sup>*</sup></a></h1>
+            <h1 class="px-2 py-1 flex items-center text-xs font-bold tracking-tighter hover:bg-[#dfdfdf]"><a href="#">COOLXPRINT</a></h1>
+        </div>
+        <div class="w-fit basis-1/2 flex justify-end max-[990px]:hidden mr-4">
+            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Tham gia CoolClub <i class="fa-solid fa-star text-lg pl-1"></i></a></div>
+            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Blog</a></div>
+            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Về Coolmate</a></div>
+            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Trung tâm CSKH</a></div>
+            <div class="px-2 py-1 text-sm font-medium tracking-tight flex items-center hover:bg-[#dfdfdf]"><a href="#">Đăng nhập</a></div>
+        </div>
+    </div>
+    <div class="w-full py-[6px] text-sm font-medium text-center text-white bg-[#525252]"><a href="#">Super Sale - Giảm đến 50% <u>Mua ngay</u> <i class="fa-solid fa-arrow-right"></i></a></div>
+
+
+    <!-- Nav menu -->
+    <div class="relative flex justify-between w-full px-[15px] xl:px-[65px] bg-[#212121] lg:px-[30px]">    
+        <!-- Menu for tab -->
+        <div class="lg:hidden text-white text-xl flex items-center gap-5 ml-3">
+            <i class="fa-solid fa-bars-staggered"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="flex py-2 lg:pr-4 items-center xl:pr-[50px] "><a href="#"><img class="min-w-[72px] w-14 sm:w-16 lg:w-[76px]" src="/img/LOGO/logo-coolmate-2.png" alt=""></a></div>
+        <div class="lg:flex hidden 2xl:pl-[170px] ">
+            <div class="pd_parent flex px-2 xl:px-4 2xl:px-5 items-center font-bold text-sm tracking-tighter text-white bg-[#ff5605]"><a href="#">SALE</a>
+                <div class="pd_child absolute w-full h-screen top-[80px] left-0 bg-[#767676] bg-opacity-70 z-50">
+                    <div class="flex h-fit mx-4 xl:mx-8 bg-[#ededed]">
+                        <div class="basis-1/3 p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                            <div class="py-2 text-sm 2xl:text-lg font-bold text-black">CHƯƠNG TRÌNH SALE</div>
+                            <span class="block w-10 h-[3px] bg-black"></span>
+                            <div class="w-full grid grid-cols-2 mt-4">
+                                <ul class="pr-10">
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/October2023/mceclip0_91.png" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Tất cả SALE</a></div>
+                                    </li>
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/October2023/mceclip3_89.png" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">SALE Lớn 50%</a></div>
+                                    </li>
+                                </ul>
+                                <ul class="pr-8">
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/October2023/mceclip2_50.png" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">SALE Áo</a></div>
+                                    </li>
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/October2023/mceclip1_23.png" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">SALE Quần</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="basis-2/3 grid grid-cols-4 px-8 pt-8 pb-10 gap-4">
+                            <div class="relative overflow-hidden"><a href="#"><img class="w-full hover:scale-125 w-max-[240px] hover:ease-in-out hover:duration-500 transition-all" src="https://mcdn.coolmate.me/image/December2023/mceclip4_61.png" alt="">
+                                <h1 class="absolute bottom-4 left-4 text-sm 2xl:text-lg font-bold text-white z-50">Quần dài Daily Pants</h1>
+                            </a></div>
+                            <div class="relative overflow-hidden"><a href="#"><img class="w-max-[240px] hover:scale-125 hover:ease-in-out hover:duration-500 transition-all" src="https://mcdn.coolmate.me/image/December2023/mceclip5_41.png" alt="">
+                                <h1 class="absolute bottom-4 left-4 text-sm 2xl:text-lg font-bold text-white z-50">Jogger thể thao Graphene</h1>
+                            </a></div>
+                            <div class="relative overflow-hidden"><a href="#"><img class="w-max-[240px] hover:scale-125 hover:ease-in-out hover:duration-500 transition-all" src="https://mcdn.coolmate.me/image/December2023/mceclip2_14.png" alt="">
+                                <h1 class="absolute bottom-4 left-4 text-sm 2xl:text-lg font-bold text-white z-50">Jogger thể thao</h1>
+                            </a></div>
+                            <div class="relative overflow-hidden"><a href="#"><img class="w-max-[240px] hover:scale-125 hover:ease-in-out hover:duration-500 transition-all" src="https://mcdn.coolmate.me/image/December2023/mceclip3_6.png" alt="">
+                                <h1 class="absolute bottom-4 left-4 text-sm 2xl:text-lg font-bold text-white z-50">Jeans dáng Slim Fit V2</h1>
+                            </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="flex min-w-[720px] xl:min-w-[775px] h-20 items-center font-bold md:text-xs lg:text-[13px] 2xl:text-base tracking-tight text-white">
+                <li class="pd_parent min-w-fit px-3 xl:px-4 py-8 hover:bg-[#413d3d] z-50"><a href="#">SẢN PHẨM</a>
+                    <div class="pd_child absolute w-full h-screen top-[80px] left-0 bg-[#767676] bg-opacity-70">
+                        <div class="flex h-fit mx-4 xl:mx-8 bg-[#ededed]">
+                            <div class="basis-3/5 p-5 2xl:px-10 w-full grid grid-cols-4 border-r-[1px] border-[#aeafaf]">
+                                <div>
+                                    <div class="py-2 text-sm 2xl:text-lg font-bold text-black">THEO SẢN PHẨM</div>
+                                    <span class="block w-10 h-[3px] bg-black"></span>
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                        <li><a class="hover:text-blue-600" href="#">Tất cả</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Sản phẩm mới</a></li>
+                                    </ul>
+                                </div>                              
+                                <div>
+                                    <div class="py-2 text-sm 2xl:text-lg font-bold text-black">ÁO NAM</div>
+                                    <span class="block w-10 h-[3px] bg-black"></span>
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                        <li><a class="hover:text-blue-600" href="#">Tất cả Áo Nam</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo thun</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo sơ mi</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo polo</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo dài tay</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo khoác</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo Tanktop</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo thể thao</a></li>
+                                    </ul>
+                                </div>                              
+                                <div>
+                                    <div class="py-2 text-sm 2xl:text-lg font-bold text-black">QUẦN NAM</div>
+                                    <span class="block w-10 h-[3px] bg-black"></span>
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                        <li><a class="hover:text-blue-600" href="#">Tất cả Quần Nam</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Quần shorts</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Quần jeans</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Quần dài</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Quần thể thao</a></li>
+                                    </ul>
+                                </div>                              
+                                <div>
+                                    <div class="py-2 text-sm 2xl:text-lg font-bold text-black">PHỤ KIỆN NAM</div>
+                                    <span class="block w-10 h-[3px] bg-black"></span>
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                        <li><a class="hover:text-blue-600" href="#">Tất cả Phụ Kiện</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Tất/Vớ</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Mũ/Nón</a></li>
+                                    </ul>
+                                </div>                              
+                            </div>
+                            <div class="basis-2/5 p-5 w-fit grid grid-cols-2 gap-5">
+                                <div class="flex flex-col h-full gap-5">
+                                    <div class="tp-styleImg relative overflow-hidden h-[50%]">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all h-full hover:scale-125 z-10" src="/img/NAV img/sanpham_1.png" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Quần dài chạy bộ Fast & Free</h1>
+                                    </div> 
+                                    <div class="tp-styleImg relative overflow-hidden h-[50%]">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all h-full hover:scale-125" src="/img/NAV img/sanpham_2.png" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Quần dài Kaki Excool</h1>
+                                    </div>
+                                </div>
+                                <div class="tp-styleImg h-full relative overflow-hidden ">
+                                    <img class="hover:ease-in-out hover:duration-500 transition-all h-full hover:scale-125 " src="/img/NAV img/sanpham_3.png" alt="">
+                                    <p class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pd_parent min-w-fit px-3 xl:px-4 py-8 hover:bg-[#413d3d]"><a href="#">ĐỒ LÓT</a>
+                    <div class="pd_child absolute w-full h-screen top-[80px] left-0 bg-[#767676] bg-opacity-70 z-50">
+                        <div class="flex flex-row h-fit mx-4 xl:mx-8 bg-[#ededed]">
+                            <div class="w-[28%] grid grid-cols-2 gap-5 p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div>
+                                    <div class="py-2 text-sm 2xl:text-lg font-bold text-black">THEO SẢN PHẨM</div>
+                                    <span class="block w-10 h-[3px] bg-black"></span>
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                    <li><a class="hover:text-blue-600" href="#">Tất cả</a></li>
+                                    <li><a class="hover:text-blue-600" href="#">Brief (Tam giác)</a></li>
+                                    <li><a class="hover:text-blue-600" href="#">Trunk (Boxer)</a></li>
+                                    <li><a class="hover:text-blue-600" href="#">Boxer Brief (Boxer dài)</a></li>
+                                    <li><a class="hover:text-blue-600" href="#">Long Leg</a></li>
+                                    <li><a class="hover:text-blue-600" href="#">Boxer shorts</a></li>
+                                    <li><a class="hover:text-blue-600" href="#">Long Tights</a></li>
+                                </ul>
+                                </div>  
+                            </div>
+                            <div class="w-[39%] p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div class="py-2 text-sm 2xl:text-lg font-bold text-black">THEO NHU CẦU</div>
+                                <span class="block w-10 h-[3px] bg-black"></span>
+                                <ul class="pt-5">
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip0_82.jpg" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Mặc hằng ngày</a></div>
+                                    </li>
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip1_4.jpg" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Chơi thể thao</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-[33%] grid grid-cols-2 gap-5 px-5 py-8 border-r-[1px] border-[#aeafaf]">
+                                <div class="flex flex-col gap-5">
+                                    <div class="tp-styleImg relative overflow-hidden h-[50%]">
+                                        <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 h-full" src="/img/NAV img/dolot1.jpg" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Trunk CoolPouch</h1>
+                                    </div>
+                                    <div class="tp-styleImg relative overflow-hidden h-[50%]"> 
+                                        <img class="hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 h-full" src="/img/NAV img/dolot2.png" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Trunk CoolFly</h1>
+                                    </div>
+                                </div>
+                                <div class="tp-styleImg relative overflow-hidden">
+                                    <img class="hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 h-full" src="/img/NAV img/dolot3.png" alt="">
+                                    <p class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Quần Long tights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pd_parent min-w-fit px-3 xl:px-4 py-8 hover:bg-[#413d3d]"><a href="#">ĐỒ THỂ THAO</a>
+                    <div class="pd_child absolute w-full h-screen top-[80px] left-0 bg-[#767676] bg-opacity-70 z-50">
+                        <div class="flex flex-row h-fit mx-4 xl:mx-8 bg-[#ededed]">
+                            <div class="w-[28%] p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div class="py-2 text-sm 2xl:text-lg font-bold text-black">THEO SẢN PHẨM</div>
+                                <span class="block w-10 h-[3px] bg-black"></span>
+                                <div class="grid grid-cols-2 gap-5 ">
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                        <li><a class="hover:text-blue-600" href="#">Tất cả</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Sản phẩm mới</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo T-shirt</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo Tanktop</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo Polo</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo dài tay</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo khoác</a></li>
+                                    </ul>
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                        <li><a class="hover:text-blue-600" href="#">Quần Shorts</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Quần Joggers</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Phụ Kiện</a></li>
+                                    </ul>
+                                </div>  
+                            </div>
+                            <div class="w-[39%] p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div class="py-2 text-sm 2xl:text-lg font-bold text-black">THEO NHU CẦU</div>
+                                <span class="block w-10 h-[3px] bg-black"></span>
+                                <div class="grid grid-cols-2">
+                                    <ul class="pt-5">
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip15_13.jpg" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Chạy bộ</a></div>
+                                        </li>
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip16_53.jpg" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Tập Gym</a></div>
+                                        </li>
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/October2023/mceclip3_20.png" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Đồ thu đông</a></div>
+                                        </li>
+                                    </ul>
+                                    <ul class="pt-5">
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip17_6.jpg" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Đồ bơi</a></div>
+                                        </li>
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip18_10.jpg" alt=""></div>
+                                            <div class="2xl:mt-32xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Thể thao chung</a></div>
+                                        </li>
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/October2023/mceclip2_12.png" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Bóng rổ</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-[33%] grid grid-cols-2 gap-5 px-5 py-8 border-r-[1px] border-[#aeafaf]">
+                                <div class="flex flex-col gap-5">
+                                    <div class="tp-styleImg relative h-full overflow-hidden">
+                                        <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125 text-transparent" src="/img/NAV img/dtt1.jpg" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">T-Shirt chạy bộ <br> Graphic Special</h1>
+                                    </div>
+                                    <div class="tp-styleImg relative h-full overflow-hidden">
+                                        <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125" src="/img/NAV img/dtt2.png" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Áo khoác chạy bộ <br> Fast & Free</h1>
+                                    </div>
+                                </div>
+                                <div class="tp-styleImg relative h-full overflow-hidden">
+                                    <img class="h-full hover:scale-150 hover:ease-in-out hover:duration-500 transition-all scale-125" src="/img/NAV img/dtt3.jpg" alt="">
+                                    <p class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Quần dài chạy bộ <br> Fast & Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pd_parent min-w-fit px-3 xl:px-4 py-8 hover:bg-[#413d3d]"><a href="#">MẶC HẰNG NGÀY</a>
+                    <div class="pd_child absolute w-full h-screen top-[80px] left-0 bg-[#767676] bg-opacity-70 z-50">
+                        <div class="flex flex-row h-fit mx-4 xl:mx-8 bg-[#ededed]">
+                            <div class="w-[28%] p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div class="py-2 text-sm 2xl:text-lg font-bold text-black">THEO SẢN PHẨM</div>
+                                <span class="block w-10 h-[3px] bg-black"></span>
+                                <div class="grid grid-cols-2 gap-5 ">
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                        <li><a class="hover:text-blue-600" href="#">Tất cả</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Sản phẩm mới</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo T-shirt</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo Tanktop</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo Polo</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo dài tay</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo khoác</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Áo sơ mi</a></li>
+                                    </ul>
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10  text-[#7f8080]">
+                                        <li><a class="hover:text-blue-600" href="#">Quần Shorts</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Quần Joggers</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Quần dài</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Quần Jeans</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Phụ Kiện</a></li>
+                                    </ul>
+                                </div>  
+                            </div>
+                            <div class="w-[39%] p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div class="py-2 text-sm 2xl:text-lg font-bold text-black">THEO NHU CẦU</div>
+                                <span class="block w-10 h-[3px] bg-black"></span>
+                                <div class="grid grid-cols-2">
+                                    <ul class="pt-5">
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip4_13.jpg" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Ready to Wear</a></div>
+                                        </li>
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip5_9.jpg" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Coolmate Basics</a></div>
+                                        </li>
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip6_11.jpg" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Công nghệ Excool</a></div>
+                                        </li>
+                                    </ul>
+                                    <ul class="pt-5">
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/October2023/mceclip4_17.jpg" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Đồ thu đông</a></div>
+                                        </li>
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip8_61.png" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Copper Denim</a></div>
+                                        </li>
+                                        <li class="nav_HvParent flex gap-4 mb-5">
+                                            <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip9_73.jpg" alt=""></div>
+                                            <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Disney & Friends</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-[33%] grid grid-cols-2 gap-5 px-5 py-8 border-r-[1px] border-[#aeafaf]">
+                                <div class="flex flex-col gap-5"> 
+                                    <div class="tp-styleImg relative overflow-hidden h-[50%]">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all hover:scale-[1.25] h-full" src="/img/NAV img/mhn1.jpg" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Jeans Copper Denim</h1>
+                                    </div>  
+                                    <div class="tp-styleImg relative overflow-hidden h-[50%]">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all hover:scale-[1.5] h-full scale-125" src="/img/NAV img/mhn2.png" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Polo Pique Cotton</h1>
+                                    </div>
+                                </div>
+                                <div class="tp-styleImg relative h-full overflow-hidden">
+                                    <img class="hover:ease-in-out hover:duration-500 transition-all hover:scale-[1.75] scale-125 translate-y-5 h-full" src="/img/NAV img/mhn3.png" alt="">
+                                    <p class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">UT Pants</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pd_parent min-w-fit px-3 xl:px-4 py-8 hover:bg-[#413d3d]"><a href="#">NƯỚC HOA</a>
+                    <div class="pd_child absolute w-full h-screen top-[80px] left-0 bg-[#767676] bg-opacity-70 z-50">
+                        <div class="flex flex-row h-fit mx-4 xl:mx-8 bg-[#ededed]">
+                            <div class="w-[28%] grid grid-cols-2 gap-5 p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div>
+                                    <div class="py-2 text-sm 2xl:text-lg font-bold text-black">THEO SẢN PHẨM</div>
+                                    <span class="block w-10 h-[3px] bg-black"></span>
+                                    <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                        <li><a class="hover:text-blue-600" href="#">Tất cả</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Nước hoa</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Tắm gội</a></li>
+                                        <li><a class="hover:text-blue-600" href="#">Cạo Râu</a></li>
+                                    </ul>
+                                </div>  
+                            </div>
+                            <div class="w-[39%] p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div class="py-2 text-sm 2xl:text-lg font-bold text-black">BỘ SƯU TẬP</div>
+                                <span class="block w-10 h-[3px] bg-black"></span>
+                                <ul class="pt-5">
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip1_89.jpg" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Moods Bosster 2023</a></div>
+                                    </li>
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/August2023/mceclip0_138.jpg" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Cool & Warm Collection</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-[33%] grid grid-cols-2 gap-5 px-5 py-8 border-r-[1px] border-[#aeafaf]">
+                                <div class="flex flex-col gap-5">
+                                    <div class="tp-styleImg relative overflow-hidden h-[50%]">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all text-transparent h-full" src="https://mcdn.coolmate.me/image/August2023/mceclip8_91.jpg" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Trunk CoolPouch</h1>
+                                    </div>
+                                    <div class="tp-styleImg relative overflow-hidden h-[50%]">
+                                        <img class="hover:ease-in-out hover:duration-500 transition-all h-full" src="https://mcdn.coolmate.me/image/August2023/mceclip7_13.jpg" alt="">
+                                        <h1 class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Trunk CoolFly</h1>
+                                    </div>
+                                </div>
+                                <div class="tp-styleImg relative overflow-hidden">
+                                    <img class="hover:ease-in-out hover:duration-500 transition-all h-full" src="https://mcdn.coolmate.me/image/December2023/mceclip0_57.png" alt="">
+                                    <p class="absolute bottom-4 2xl:text-xl left-4 text-sm font-bold text-black z-50">Quần Long tights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pd_parent min-w-fit px-3 xl:px-4 py-8 hover:bg-[#413d3d]"><a href="#">SẢN XUẤT RIÊNG</a>
+                    <div class="pd_child absolute w-full h-screen top-[80px] left-0 bg-[#767676] bg-opacity-70 z-50">
+                        <div class="h-fit mx-4 xl:mx-8 bg-[#ededed]">
+                            <div class="flex justify-center">
+                                <div class="px-12 py-5 border-r-[1px] border-[#aeafaf] 2xl:py-20 2xl:px-24">
+                                    <p class="pt-4 pb-1 text-3xl font-semibold text-[#231f20]">CoolxPrint</p>
+                                    <p class="text-base font-medium text-[#888787]">Đặt sản xuất chưa bao giờ đơn giản đến thế</p>
+                                    <div class="flex py-5">
+                                        <img class="w-[113px] h-[95px] mr-2" src="https://media.coolmate.me/image/March2023/mceclip0_33.png" alt="">
+                                        <img class="w-[113px] h-[95px] mr-2" src="https://media.coolmate.me/image/March2023/mceclip2_54.png" alt="">
+                                        <img class="w-[113px] h-[95px] mr-2" src="https://media.coolmate.me/image/March2023/mceclip1_74.png" alt="">        
+                                    </div>
+                                    <div class="w-fit px-7 py-2 text-base font-bold rounded-2xl cursor-pointer bg-blue-600 hover:bg-black">Khám phá ngay</div>
+                                </div>
+                                <div class="px-12 grid grid-cols-2 my-5 gap-5 2xl:py-12 2xl:px-24">
+                                    <div class="w-fit">
+                                        <div class="tp-styleImg relative w-fit h-fit my-5 overflow-hidden">
+                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV img/sxr1.jpg" alt="">
+                                            <p class="absolute bottom-4 xl:text-xl left-4 text-sm font-bold text-white z-50">Các loại quần</p>
+                                        </div>
+                                        <div class="tp-styleImg relative w-fit h-fit my-5 overflow-hidden">
+                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV img/sxr2.jpg" alt="">
+                                            <p class="absolute bottom-4 xl:text-xl left-4 text-sm font-bold text-white z-50">Các loại áo</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-fit">
+                                        <div class="tp-styleImg relative w-fit h-fit my-5 overflow-hidden">
+                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV img/sxr3.jpg" alt="">
+                                            <p class="absolute bottom-4 xl:text-xl left-4 text-sm font-bold text-white z-50">Sản phẩm khác</p>
+                                        </div>
+                                        <div class="tp-styleImg relative w-fit h-fit my-5 overflow-hidden">
+                                            <img class="hover:ease-in-out hover:duration-500 transition-all w-[196px] h-[146px] 2xl:w-[246px] 2xl:h-[196px] scale-110 hover:scale-150" src="/img/NAV img/sxr4.jpg" alt="">
+                                            <p class="absolute bottom-4 xl:text-xl left-4 text-sm font-bold text-white z-50">Phụ kiện</p>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pd_parent min-w-fit px-3 xl:px-4 py-8 hover:bg-[#413d3d]"><a href="#">CARE & SHARE</a>
+                    <div class="pd_child absolute w-full h-screen top-[80px] left-0 bg-[#767676] z-50">
+                        <div class="flex h-fit mx-4 xl:mx-8 bg-[#ededed]">
+                            <div class="w-[25%] p-5 2xl:px-10 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div class="py-2 text-sm 2xl:text-lg font-bold text-black">THEO SẢN PHẨM</div>
+                                <span class="block w-10 h-[3px] bg-black"></span>
+                                <ul class="mt-4 text-sm 2xl:text-lg font-medium leading-9 2xl:leading-10 text-[#7f8080]">
+                                    <li><a class="hover:text-blue-600" href="#">Tất cả</a></li>
+                                    <li><a class="hover:text-blue-600" href="#">Áo thun in</a></li>
+                                    <li><a class="hover:text-blue-600" href="#">Phụ kiện</a></li>
+                                </ul>
+                            </div>
+                            <div class="w-[25%] p-5 2xl:px-10 border-r-[1px] border-[#aeafaf]">
+                                <div class="py-2 text-sm 2xl:text-lg font-bold text-black">BỘ SƯU TẬP</div>
+                                <span class="block w-10 h-[3px] bg-black"></span>
+                                <ul class="pt-5">
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/September2023/mceclip1_44.jpg" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">BST Cat & Dog</a></div>
+                                    </li>
+                                    <li class="nav_HvParent flex gap-4 mb-5">
+                                        <div class="nav_HvImg border-2 rounded-full overflow-hidden"><img class="w-9 2xl:w-16 scale-110" src="https://mcdn.coolmate.me/image/January2024/mceclip2_39.png" alt=""></div>
+                                        <div class="2xl:mt-3 h-9 flex items-center font-medium text-sm 2xl:text-lg text-[#858484] border-b-[1px] border-[#d5d5d5]"><a class="nav_HvText" href="#">Care & Share 3 tuổi</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-[50%]">
+                                <div class="p-10">
+                                    <p class=" pb-3 text-[15px] font-medium text-center leading-8 text-[#7f8080]">Coolmate cam kết dành 10% doanh thu từ sản phẩm “Care & Share” đóng góp vào quỹ để tổ chức các hoạt động thiện nguyện dành cho trẻ em có hoàn cảnh khó khăn.</p>
+                                    <img src="https://mcdn.coolmate.me/image/August2023/mceclip0_29.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex">
+            <div class="relative ml-3 lg:flex items-center hidden">
+                <input class="w-full max-w-[210px] pl-10 pr-5 py-4 text-sm rounded-full outline-none placeholder:font-medium placeholder:tracking-tighter placeholder:text-[#706f6f] bg-[#e8e8e8]" type="text" placeholder="Tìm kiếm sản phẩm...">
+                <i class="absolute left-3 text-2xl cursor-pointer fa-solid fa-magnifying-glass"></i>            
+            </div>
+            <div class="flex px-3 lg:px-2 xl:px-4 items-center text-2xl text-white"><a href="#"><i class="fa-solid fa-user"></i></a></i></div>
+            <div class="pd_parent relative flex px-3 lg:px-2 xl:px-4 items-center text-2xl text-white">
+                <a href="#">
+                    <i class="relative fa-solid fa-bag-shopping"><div class="absolute inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-black bg-[#f9f86c] rounded-full top-4 -end-2">0</div></i>
+                </a>
+                <div class="pd_child absolute right-0 top-20 w-96 text-center rounded-2xl bg-white z-50">
+                    <p class="px-16 py-5 text-sm font-medium text-black">Hôm nay anh khá đẹp trai, nhưng chưa đủ đẹp nếu thiếu đồ Coolmate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advance Img -->
+     <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-[500px] 2xl:h-[780px] overflow-hidden z-0">
+             <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <a href="#"><img src="/img/Slide Menu/slide1.jpg" class="absolute block max-w-full h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></a>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <a href="#"><img src="/img/Slide Menu/slide2.jpg" class="absolute block max-w-full h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></a>
+            </div>
+        </div>
+        <div class="flex justify-center items-center pt-4 z-10">
+            <button type="button" class="absolute top-[-15px] right-6 flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="text-gray-900">
+                    <svg class="rtl:rotate-180 w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                    </svg>
+                </span>
+            </button>
+            <button type="button" class="absolute top-6 right-6 flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="text-gray-900">
+                    <svg class="rtl:rotate-180 w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Sản Phẩm Mới -->
+    <div class="flex mx-4 mt-12 mb-4 gap-7">
+        <div class="px-6 py-2 text-xl font-bold rounded-full text-white bg-black">Sản phẩm mới</div>
+        <div class="px-6 py-2 text-xl font-bold rounded-full border border-black text-black">Bán chạy nhất</div>
+    </div>
+
+
+    <!-- Đồ Thu Đông --> 
+    <div class="relative">
+        <a href="#"><img class="w-full" src="/img/Product/DoThuDong/dothudong.avif" alt=""></a>
+        <div class="absolute top-[18%] flex items-center left-8 h-full z-50">
+            <div>
+                <p class="text-[60px] xl:text-[65px] 2xl:text-[85px] font-bold leading-tight">ĐỒ THU ĐÔNG</p>
+                <div class="my-2 xl:my-5 font-semibold text-xl">Đa dạng lựa chọn dành cho bạn</div>
+                <button class="px-10 py-3 my-3 rounded-full text-base font-semibold bg-black text-white">KHÁM PHÁ NGAY</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="2xl:px-16">
+        <div class="flex justify-between pt-10 pb-3">
+            <h1 class="text-3xl font-semibold">SẢN PHẨM THU ĐÔNG</h1>
+            <a href="#" class="text-xl font-semibold"><u>Xem Thêm</u></a>
+        </div> 
+        <div class="grid grid-cols-4 gap-4">
+            <div>
+                <div class="pd_parent relative overflow-hidden">
+                    <a href="#">
+                        <div>
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/DoThuDong/Card4.2.jpg" alt="">
+                            <div>
+                                <a href="#"><img class="pd_child absolute top-0 rounded-lg rounded-b-lg'" src="/img/Product/DoThuDong/Card4.1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-7 w-[86%] z-50">
+                            <div class="pd_child ml-[7%] w-full h-fit rounded-lg bg-opacity-90 bg-[#d7d7d6]">
+                                <p class="py-3 font-bold text-sm text-center">Thêm nhanh vào giỏ hàng +</p>
+                                <div class="pb-4 px-2 flex w-[100%] justify-center flex-wrap gap-1">
+                                    <a href="">
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">S</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">M</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">L</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">2XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">3XL</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <h1 class="absolute top-2 left-3 text-[#231f20]">4.8 <i class="fa-solid fa-star text-xs"></i> <span class="text-sm font-extrabold text-[#2f5acf]">(21)</span></h1>
+                    <span class="absolute top-3 right-3 px-2 py-1 font-extrabold text-xs rounded-md bg-[#ff3102] text-white">Sale</span>
+                    <a href="#"><img class="absolute bottom-[2%] left-[2%] w-[40%] z-10" src="/img/Product/AoThunNam/discount1.png" alt=""></a>
+                </div>
+                <a href="#">
+                    <div class="flex gap-1 mb-1 mt-3">
+                        <img class="w-10 h-[25px] p-[2px] rounded-xl borderProduct Addborder" src="/img/Product/AoThunNam/color1.1.avif" alt="">
+                        <img class="w-10 h-[25px] p-[2px] rounded-xl Addborder" src="/img/Product/AoThunNam/color1.1.avif" alt="">
+                    </div>
+                </a>
+                <a href="#"><h1 class="text-sm font-semibold text-[#231f20]">Áo Singlet Nam Chạy Bộ in Graphic Special</h1></a>
+                <p class="text-sm font-medium text-[#9b9b9b]">Mỏng nhẹ / Đen</p>
+                <p class="font-bold text-sm mt-1">189.000đ</p>
+            </div>
+            <div>
+                <div class="pd_parent relative overflow-hidden">
+                    <a class="z-50" href="#">
+                        <div>
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/DoThuDong/Card3.1.jpg" alt="">
+                            <div>
+                                <a href="#"><img class="pd_child absolute top-0 rounded-lg" src="/img/Product/DoThuDong/Card3.2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-7 w-[86%] z-50">
+                            <div class="pd_child ml-[7%] w-full h-fit rounded-lg bg-opacity-90 bg-[#d7d7d6]">
+                                <p class="py-3 font-bold text-sm text-center">Thêm nhanh vào giỏ hàng +</p>
+                                <div class="pb-4 px-2 flex w-[100%] justify-center flex-wrap gap-1">
+                                    <a href="">
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">S</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">M</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">L</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">2XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">3XL</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <h1 class="absolute top-2 left-3 text-[#231f20]">4.8 <i class="fa-solid fa-star text-xs"></i> <span class="text-sm font-extrabold text-[#2f5acf]">(11)</span></h1>
+                    <span class="absolute top-3 right-3 px-2 py-1 font-extrabold text-xs rounded-md bg-[#ff3102] text-white">Sale</span>
+                    <a href="#"><img class="absolute bottom-[2%] left-[2%] w-[40%] z-10" src="/img/Product/AoThunNam/discount1.png" alt=""></a>
+                </div>
+                <a href="#">
+                    <div class="flex gap-1 mb-1 mt-3">
+                        <div><img class="w-10 h-[25px] p-[2px]" src="/img/Product/AoThunNam/color.avif" alt=""></div>
+                    </div>
+                </a>
+                <a href="#"><h1 class="text-sm font-semibold text-[#231f20]"></h1></a>
+                <p class="text-sm font-medium text-[#9b9b9b]"></p>
+                <p class="font-bold text-sm mt-1">đ</p>
+            </div>
+            <div>
+                <div class="pd_parent relative overflow-hidden">
+                    <a href="#">
+                        <div>
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/DoThuDong/Card2.1.jpg" alt="">
+                            <div>
+                                <a href="#"><img class="pd_child absolute top-0 rounded-lg" src="/img/Product/DoThuDong/Card2.2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-7 w-[86%] z-50">
+                            <div class="pd_child ml-[7%] w-full h-fit rounded-lg bg-opacity-90 bg-[#d7d7d6]">
+                                <p class="py-3 font-bold text-sm text-center">Thêm nhanh vào giỏ hàng +</p>
+                                <div class="pb-4 px-2 flex w-[100%] justify-center flex-wrap gap-1">
+                                    <a href="">
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">S</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">M</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">L</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">2XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">3XL</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <h1 class="absolute top-2 left-3 text-[#231f20]">4.9 <i class="fa-solid fa-star text-xs"></i> <span class="text-sm font-extrabold text-[#2f5acf]">(105)</span></h1>
+                    <span class="absolute top-3 right-3 px-2 py-1 font-extrabold text-xs rounded-md bg-[#009739] text-white">Đáng mua</span>
+                </div>
+                <a href="#">
+                    <div class="flex gap-1 mb-1 mt-3">
+                        <div><img class="w-10 h-[25px] p-[2px] border-gray-700" src="/img/Product/AoThunNam/color.avif" alt=""></div>
+                    </div>
+                </a>
+                <a href="#"><h1 class="text-sm font-semibold text-[#231f20]"></h1></a>
+                <p class="text-sm font-medium text-[#9b9b9b]"></p>
+                <p class="font-bold text-sm mt-1">đ</p>
+            </div>
+            <div>
+                <div class="pd_parent relative overflow-hidden">
+                    <a href="#">
+                        <div>
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/DoThuDong/Card1.1.jpg" alt="">
+                            <div>
+                                <a href="#"><img class="pd_child absolute top-0 rounded-lg" src="/img/Product/DoThuDong/Card1.2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-7 w-[86%] z-50">
+                            <div class="pd_child ml-[7%] w-full h-fit rounded-lg bg-opacity-90 bg-[#d7d7d6]">
+                                <p class="py-3 font-bold text-sm text-center">Thêm nhanh vào giỏ hàng +</p>
+                                <div class="pb-4 px-2 flex w-[100%] justify-center flex-wrap gap-1">
+                                    <a href="">
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">S</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">M</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">L</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">2XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">3XL</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <h1 class="absolute top-2 left-3 text-[#231f20]">4.7 <i class="fa-solid fa-star text-xs"></i> <span class="text-sm font-extrabold text-[#2f5acf]">(14)</span></h1>
+                    <span class="absolute top-3 right-3 px-2 py-1 font-extrabold text-xs rounded-md bg-[#ff3102] text-white">Sale</span>
+                </div>
+                <a href="#">
+                    <div class="flex gap-1 mb-1 mt-3">
+                        <div><img class="w-10 h-[25px] p-[2px] border-gray-700" src="/img/Product/AoThunNam/color.avif" alt=""></div>
+                    </div>
+                </a>
+                <a href="#"><h1 class="text-sm font-semibold text-[#231f20]"></h1></a>
+                <p class="text-sm font-medium text-[#9b9b9b]"></p>
+                <p class="font-bold text-sm mt-1"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Đồ Chạy Bộ -->
+    <div class="relative">
+        <a href="#"><img class="w-full" src="/img/Product/DoChayBo/dochaybo.avif" alt=""></a>
+        <div class="absolute top-[18%] flex items-center left-8 h-full z-50">
+            <div>
+                <p class="text-[60px] xl:text-[65px] 2xl:text-[85px] font-bold leading-tight">ĐỒ CHẠY BỘ</p>
+                <div class="my-2 xl:my-5 font-semibold text-xl">Trải nghiệm chưa từng có trong mỗi sải chân</div>
+                <button class="px-10 py-3 my-3 rounded-full text-base font-semibold bg-black text-white">KHÁM PHÁ NGAY</button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Áo Thun Nam -->
+    <div class="relative">
+        <a href="#"><img class="w-full" src="/img/Product/AoThunNam/aothunnam.avif" alt=""></a>
+        <div class="absolute top-[18%] flex items-center left-8 h-full z-50">
+            <div>
+                <p class="text-[60px] xl:text-[65px] 2xl:text-[85px] font-bold leading-tight">ÁO THUN NAM</p>
+                <div class="my-2 xl:my-5 font-semibold text-xl">Đáp ứng mọi nhu cầu cho bạn lựa chọn</div>
+                <button class="px-10 py-3 my-3 rounded-full text-base font-semibold bg-black text-white">KHÁM PHÁ NGAY</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="2xl:px-16">
+        <div class="flex justify-between pt-10 pb-3">
+            <h1 class="text-3xl font-semibold">SẢN PHẨM ÁO THUN NAM</h1>
+            <a href="#" class="text-xl font-semibold"><u>Xem Thêm</u></a>
+        </div> 
+        <div class="grid grid-cols-4 gap-4">
+            <div>
+                <div class="pd_parent relative overflow-hidden">
+                    <a href="#">
+                        <div>
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/AoThunNam/Card1.2.jpg" alt="">
+                            <div>
+                                <a href="#"><img class="pd_child absolute top-0 rounded-lg rounded-b-lg'" src="/img/Product/AoThunNam/Card1.1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-7 w-[86%]">
+                            <div class="pd_child ml-[7%] w-full h-fit rounded-lg bg-opacity-90 bg-[#d7d7d6]">
+                                <p class="py-3 font-bold text-sm text-center">Thêm nhanh vào giỏ hàng +</p>
+                                <div class="pb-4 px-2 flex w-[100%] justify-center flex-wrap gap-1">
+                                    <a href="">
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">S</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">M</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">L</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">2XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">3XL</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <h1 class="absolute top-2 left-3 text-[#231f20]">4.7 <i class="fa-solid fa-star text-xs"></i> <span class="text-sm font-extrabold text-[#2f5acf]">(2)</span></h1>
+                    <span class="absolute top-3 right-3 px-2 py-1 font-bold text-xs rounded-md bg-[#2f5acf] text-white">New</span>
+                </div>
+                <a href="#">
+                    <div class="flex gap-1 mb-1 mt-3">
+                        <div><img class="w-10 h-[25px] p-[2px] rounded-xl border-[1px] border-gray-700" src="/img/Product/AoThunNam/color.avif" alt=""></div>
+                    </div>
+                </a>
+                <a href="#"><h1 class="text-sm font-semibold text-[#231f20]">Áo Singlet Nam Chạy Bộ in Graphic Special</h1></a>
+                <p class="text-sm font-medium text-[#9b9b9b]">Mỏng nhẹ / Đen</p>
+                <p class="font-bold text-sm mt-1">189.000đ</p>
+            </div>
+            <div>
+                <div class="pd_parent relative overflow-hidden">
+                    <a class="z-50" href="#">
+                        <div>
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/AoThunNam/Card2.1.jpg" alt="">
+                            <div>
+                                <a href="#"><img class="pd_child absolute top-0 rounded-lg" src="/img/Product/AoThunNam/Card2.2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-7 w-[86%] z-50">
+                            <div class="pd_child ml-[7%] w-full h-fit rounded-lg bg-opacity-90 bg-[#d7d7d6]">
+                                <p class="py-3 font-bold text-sm text-center">Thêm nhanh vào giỏ hàng +</p>
+                                <div class="pb-4 px-2 flex w-[100%] justify-center flex-wrap gap-1">
+                                    <a href="">
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">S</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">M</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">L</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">2XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">3XL</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <h1 class="absolute top-2 left-3 text-[#231f20]">4.7 <i class="fa-solid fa-star text-xs"></i> <span class="text-sm font-extrabold text-[#2f5acf]">(2)</span></h1>
+                    <span class="absolute top-3 right-3 px-2 py-1 font-bold text-xs rounded-md bg-[#2f5acf] text-white">New</span>
+                    <a href="#"><img class="absolute bottom-[2%] left-[2%] w-[40%] z-10" src="/img/Product/AoThunNam/discount1.png" alt=""></a>
+                </div>
+                <a href="#">
+                    <div class="flex gap-1 mb-1 mt-3">
+                        <div><img class="w-10 h-[25px] p-[2px] border-gray-700" src="/img/Product/AoThunNam/color.avif" alt=""></div>
+                    </div>
+                </a>
+                <a href="#"><h1 class="text-sm font-semibold text-[#231f20]"></h1></a>
+                <p class="text-sm font-medium text-[#9b9b9b]"></p>
+                <p class="font-bold text-sm mt-1">đ</p>
+            </div>
+            <div>
+                <div class="pd_parent relative overflow-hidden">
+                    <a href="#">
+                        <div>
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/AoThunNam/Card3.1.jpg" alt="">
+                            <div>
+                                <a href="#"><img class="pd_child absolute top-0 rounded-lg" src="/img/Product/AoThunNam/Card3.2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-7 w-[86%] z-50">
+                            <div class="pd_child ml-[7%] w-full h-fit rounded-lg bg-opacity-90 bg-[#d7d7d6]">
+                                <p class="py-3 font-bold text-sm text-center">Thêm nhanh vào giỏ hàng +</p>
+                                <div class="pb-4 px-2 flex w-[100%] justify-center flex-wrap gap-1">
+                                    <a href="">
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">S</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">M</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">L</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">2XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">3XL</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <h1 class="absolute top-2 left-3 text-[#231f20]">4.7 <i class="fa-solid fa-star text-xs"></i> <span class="text-sm font-extrabold text-[#2f5acf]">(2)</span></h1>
+                    <span class="absolute top-3 right-3 px-2 py-1 font-bold text-xs rounded-md bg-[#2f5acf] text-white">New</span>
+                    <a href="#"><img class="absolute bottom-[2%] left-[2%] w-[40%] z-10" src="/img/Product/AoThunNam/discount2.png" alt=""></a>
+                </div>
+                <a href="#">
+                    <div class="flex gap-1 mb-1 mt-3">
+                        <div><img class="w-10 h-[25px] p-[2px] border-gray-700" src="/img/Product/AoThunNam/color.avif" alt=""></div>
+                    </div>
+                </a>
+                <a href="#"><h1 class="text-sm font-semibold text-[#231f20]"></h1></a>
+                <p class="text-sm font-medium text-[#9b9b9b]"></p>
+                <p class="font-bold text-sm mt-1">đ</p>
+            </div>
+            <div>
+                <div class="pd_parent relative overflow-hidden">
+                    <a href="#">
+                        <div>
+                            <img class="pd_parent relative rounded-lg" src="/img/Product/AoThunNam/Card4.1.jpg" alt="">
+                            <div>
+                                <a href="#"><img class="pd_child absolute top-0 rounded-lg" src="/img/Product/AoThunNam/Card4.2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-7 w-[86%] z-50">
+                            <div class="pd_child ml-[7%] w-full h-fit rounded-lg bg-opacity-90 bg-[#d7d7d6]">
+                                <p class="py-3 font-bold text-sm text-center">Thêm nhanh vào giỏ hàng +</p>
+                                <div class="pb-4 px-2 flex w-[100%] justify-center flex-wrap gap-1">
+                                    <a href="">
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">S</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">M</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">L</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">2XL</span>
+                                        <span class="px-[18px] py-[6px] text-base font-semibold tracking-tight rounded-lg bg-white hover:bg-black hover:text-white duration-700 ease-in-out">3XL</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <h1 class="absolute top-2 left-3 text-[#231f20]">4.7 <i class="fa-solid fa-star text-xs"></i> <span class="text-sm font-extrabold text-[#2f5acf]">(2)</span></h1>
+                    <span class="absolute top-3 right-3 px-2 py-1 font-bold text-xs rounded-md bg-[#2f5acf] text-white">New</span>
+                    <a href="#"><img class="absolute bottom-[2%] left-[2%] w-[40%] z-10" src="/img/Product/AoThunNam/discount1.png" alt=""></a>
+                </div>
+                <a href="#">
+                    <div class="flex gap-1 mb-1 mt-3">
+                        <div><img class="w-10 h-[25px] p-[2px] border-gray-700" src="/img/Product/AoThunNam/color.avif" alt=""></div>
+                    </div>
+                </a>
+                <a href="#"><h1 class="text-sm font-semibold text-[#231f20]"></h1></a>
+                <p class="text-sm font-medium text-[#9b9b9b]"></p>
+                <p class="font-bold text-sm mt-1"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Title Img -->
+    <div class="relative py-14">
+        <a href="#"><img src="https://mcdn.coolmate.me/image/March2023/mceclip0_137.jpg" alt=""></a>
+        <div class="absolute top-0 flex items-center left-16 w-fit h-full z-50">
+            <div>
+                <img class="w-80 xl:w-96" src="https://mcdn.coolmate.me/image/March2023/mceclip8.png" alt="">
+                <p class="text-3xl xl:text-5xl font-semibold leading-tight text-white">Góp phần mang lại<br>cuộc sống tươi đẹp hơn<br>cho tụi nhỏ</p>
+                <button class="px-10 py-3 my-10 rounded-full text-base font-semibold bg-white">VỀ CARE & SHARE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex w-full px-4 2xl:px-16">
+        <div class="relative mr-4 w-[50%]">
+            <img class="h-full" src="https://mcdn.coolmate.me/image/December2023/mceclip1_99.png" alt="">
+            <div class="absolute top-0 flex items-end left-8 w-fit h-full z-50">
+                <div>
+                    <p class="text-base font-semibold text-[#b1c0ce]">CM24 MỘT TUỔI</p>
+                    <p class="text-4xl xl:text-5xl font-semibold leading-tight text-white">MỜI BẠN <br> CHUNG VUI</p>
+                    <button class="px-10 py-3 my-7 xl:my-10 rounded-full text-base font-semibold bg-white">NHẬN QUÀ NGAY</button>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-[50%]">
+            <img class="h-full" src="https://mcdn.coolmate.me/image/October2023/mceclip1_15.png" alt="">
+            <div class="absolute top-0 flex items-end left-8 w-fit h-full z-50">
+                <div>
+                    <p class="text-base font-semibold text-[#b1c0ce]">84RISING - STREETWEAR</p>
+                    <p class="text-4xl xl:text-5xl font-semibold leading-tight text-white">BASKETBALL <br> COLLECTION</p>
+                    <button class="px-10 py-3 my-7 xl:my-10 rounded-full text-base font-semibold bg-white">KHÁM PHÁ NGAY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex px-4 2xl:px-16 gap-4 py-14">
+        <div class="w-[25%] h-fit">
+            <div class="pd_parent h-fit relative">
+                <img src="/img/Title img/title1.avif" alt="">
+                <div class="pd_child absolute top-0 left-0 w-full h-full bg-gray-800 opacity-30 z-50"></div>
+            </div>
+        </div>
+        <div class="w-[25%] h-fit">
+            <div class="pd_parent h-fit relative">
+                <img src="/img/Title img/title2.avif" alt="">
+                <div class="pd_child absolute top-0 left-0 w-full h-full bg-gray-800 opacity-30 z-50"></div>
+            </div>
+        </div>
+        <div class="w-[25%] h-fit">
+            <div class="pd_parent h-fit relative">
+                <img src="/img/Title img/title3.avif" alt="">
+                <div class="pd_child absolute top-0 left-0 w-full h-full bg-gray-800 opacity-30 z-50"></div>
+            </div>
+        </div>
+        <div class="w-[25%] h-fit">
+            <div class="pd_parent h-fit relative">
+                <img src="/img/Title img/title4.avif" alt="">
+                <div class="pd_child absolute top-0 left-0 w-full h-full bg-gray-800 opacity-30 z-50"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 2xl:px-16 pb-14"><a href="#"><img src="/img/Title img/title5.avif" alt=""></a></div>
+
+
+    <!--Diary Coolmate -->
+    <div class="px-4">
+        <div class="text-center">
+            <p class="text-[27px] font-bold font-aaa text-black">NHẬT KÝ COOLMATE</p>
+            <p class="text-sm font-semibold text-[#273ccd]">Chia sẻ diện mạo mới nhất của bạn cùng với #Coolmate.</p>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div class="py-3 bg-[#273ccd]">
+        <div class="text-center"><p class="text-2xl font-bold text-white">Tham gia COOLCLUB <span class="lg:inline hidden">-</span> <br class="lg:hidden block"> Nhận ngay Voucher 15% + Hoàn tiền khi mua sắm</p></div>
+        <div class="flex justify-center mt-5 mb-2 gap-5">
+            <a href="#"><p class="px-5 py-1 text-[14px] font-bold rounded-2xl text-blue-600 bg-white">THAM GIA MIỄN PHÍ hoặc ĐĂNG NHẬP</p></a>
+            <a href="#"><p class="px-5 py-1 pb-[6px] text-[14px] font-bold rounded-2xl border boder-white text-white bg-blue-700">Tìm hiểu đặc quyền Hội viên CoolClub</p></a>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="px-4 bg-black md:block hidden">
+        <div class="py-6 lg:flex">
+            <div class="lg:basis-1/3 text-white max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:items-center">
+                <p class="text-lg font-bold">COOLMATE lắng nghe bạn!</p>
+                <p class="mt-1 text-sm px-16 lg:px-0 lg:text-xs font-semibold text-[#bbb9b9] max-[1024px]:text-center">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</p>
+                <a href="#">
+                    <p class="w-fit px-7 py-3 mt-5 text-xs font-bold rounded-xl bg-blue-700 hover:bg-white hover:text-black">Đóng góp ý kiến</p>
+                </a>
+            </div>
+            <div class="lg:basis-1/3 lg:flex max-[1024px]:mt-7 flex-col justify-center items-center">
+                <div class="h-full mt-2 flex justify-center gap-10 lg:justify-start lg:block lg:gap-0">
+                    <div class="flex gap-4 lg:mb-3 h-fit">
+                        <img src="https://static.coolmate.me/images/footer/icon-hotline.svg" alt="">
+                        <div class="text-sm font-extrabold text-white">
+                            <p class="text-xs font-semibold">Hotline</p>
+                            <a href="#"><p>1900.272737 - 028.7777.2737</p></a>
+                            <p class="text-bold">(8:30 - 22:00)</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <img src="https://static.coolmate.me/images/footer/icon-email.svg" alt="">
+                        <div class="text-sm font-bold text-white flex flex-col justify-center">
+                            <p class="text-xs font-extrabold">Email</p>
+                            <a href="#"><p>Cool@coolmate.me</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:basis-1/3">
+                <div class="flex mt-10 gap-8 justify-center">
+                    <a href="#"><img class="w-6" src="https://mcdn.coolmate.me/image/June2023/mceclip1_43.png" alt=""></a>
+                    <a href="#"><img class="w-9" src="https://mcdn.coolmate.me/image/June2023/mceclip2_68.png" alt=""></a>
+                    <a href="#"><img class="w-9" src="https://mcdn.coolmate.me/image/June2023/mceclip0_62.png" alt=""></a>
+                    <a href="#"><img class="w-10" src="https://static.coolmate.me/images/footer/icon-instar.svg" alt=""></a>
+                    <a href="#"><img class="w-12" src="https://static.coolmate.me/images/footer/icon-youtube.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Bottom Fixed -->
+    <div class="fixed bottom-0 w-full h-fit flex justify-center hidden">
+        <div class="relative flex w-[563px] px-6 py-3 items-center rounded-t-lg bottom-0 text-white bg-[#2f5acf]">
+            <div class="pr-2 flex items-center"><img class="w-[24px] h-[24px]" src="https://mcdn.coolmate.me/image/September2023/mceclip0_16.png" alt=""></div>
+            <h1>VOUCHER DÀNH CHO BẠN</h1>
+            <i class="absolute text-lg top-3 right-5 fa-solid fa-arrow-up"></i>
+            <i class="absolute text-lg top-3 right-5 fa-solid fa-arrow-down"></i>
+        </div>
+    </div>
+
+
+
+
+    <div class="h-[900px] bg-white"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+</html> 
